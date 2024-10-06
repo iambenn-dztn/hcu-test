@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "name": "Task 1",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "name": "Task 2 so long text to test the overflow of the text in the card component and see how it behaves",
+      "completed": false
+    },
+    {
+      "name": "Test1",
+      "completed": false,
+      "id": "fed2"
+    }
+  ]
+}
