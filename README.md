@@ -1,46 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# HCU Test Project
+## Description
+This project is a React application that includes various components, utilities, and services. It uses Storybook for component development and testing.
+## Project Structure
+hcu-test/
+├── .env
+├── .env.sample
+├── .eslintrc.json
+├── .gitignore
+├── .prettierignore
+├── .prettierrc
+├── package.json
+├── pnpm-lock.yaml
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+├── src/
+│   ├── apis/
+│   │   ├── domains/
+│   │   │   ├── base/
+│   │   │   └── todos/
+│   │   └── mocks/
+│   ├── App.tsx
+│   ├── components/
+│   │   ├── buttons/
+│   │   ├── dialogs/
+│   │   └── form-fields/
+│   ├── index.tsx
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
+│   ├── services/
+│   ├── setupTests.ts
+│   ├── utils/
+│   │   ├── AxiosClient.ts
+│   │   ├── error.ts
+│   │   ├── errors.ts
+│   │   ├── httpClient.ts
+│   │   ├── useFetchQuery.ts
+│   │   └── useLazyQuery.ts
+│   └── views/
+│       └── todo-list/
+├── tsconfig.json
+└── webpack.config.js
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+- Node.js (>= 14.0.0)
+- pnpm (>= 6.0.0)
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ - Clone the repository:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   git@github.com:iambenn-dztn/hcu-test.git
+   ```
+ - Install packages
+    ```sh
+	cd hcu-test
+	pnpm  install
+	cp  .env.sample  .env
+ - Run Mock API Server
+	```sh
+	pnpm mock
+	```
+ -  Run project
+	```sh
+	pnpm start
+	```
+ - Lint Code
+	```sh
+	pnpm  lint
+	pnpm  lint:fix
+	```
+ - Storybook
+	```sh
+	pnpm  storybook
+	```
+## Done Feature:
+ - Todo list (Creat, Update, Filter)
+ - Mock API using json-server
+ - Add validation using react-hook-form
+ - Setup prettier for project
+ - Setup eslint for project
+ - Add sample storybook 
