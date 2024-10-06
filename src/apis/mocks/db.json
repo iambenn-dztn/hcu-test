@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Task 1",
-      "completed": false
+      "completed": true
     },
     {
       "id": "2",
@@ -14,6 +14,21 @@
       "name": "Test1",
       "completed": false,
       "id": "fed2"
+    },
+    {
+      "id": "c46a",
+      "name": "1",
+      "completed": true
+    },
+    {
+      "id": "c22a",
+      "name": "2",
+      "completed": true
+    },
+    {
+      "id": "bba3",
+      "name": "4",
+      "completed": false
     }
   ]
 }
